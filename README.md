@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# BIRTYHDAY BUDDY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Birthday buddy](./design/01-birthday-buddy.jpg)](https://react-01-birthday-buddy.netlify.app)
 
-## Available Scripts
+## Steps
 
-In the project directory, you can run:
+#### Import Data
 
-### `npm start`
+In App.jsx, import the data (from data.js) to be rendered as an array of objects. Each object should represent a person and contain properties such as name, age, and image URL.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Setup State Variable
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Then, set up the data as a state variable using the useState hook. This will allow the data to be modified and have those changes automatically reflected in the rendered output.
 
-### `npm test`
+#### Iterate and Render
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Display the number of items in the list by using the length property of the state variable. This information can be displayed using plain text or added to a message or heading element.
 
-### `npm run build`
+To render the list of people, iterate over the data array using the map method. For each item in the array, render an image element (hint : use inline styles to make width smaller).Additionally, render the person's name and age as plain text.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a List component to hold the rendered items. This component can be a simple div element containing the list of Person components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a Person component to render the information for each person. This component should receive the person data as props and render the image, name, and age information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Clear List
 
-### `npm run eject`
+In App.jsx, add a button to clear the list, and set up the functionality by defining a function that resets the state variable to an empty array.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Overall, the flow of the application should look something like this:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Import the data you want to render in App.jsx.
+- Set up the data as a state variable using useState.
+- Use the map method to iterate over the data array and render a Person component for each person.
+- Each Person component should render an image with a style prop to control the width, the person's name, and the person's age.
+- Create a List component that holds the rendered items.
+- Create a button with functionality to clear the list.
+- Display the number of items in the list using the length property of the state variable. This can be rendered using plain text or added to a message or heading element.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Portfolio - [@mraditya1999](https://www.adityayadav.live)
+- Twitter - [@mraditya1999](https://twitter.com/mraditya1999)
+- Linkedin - [@mraditya1999](https://www.linkedin.com/in/mraditya1999/)
+- Medium - [@mraditya1999](https://medium.com/@mraditya1999)
+- Frontend Mentor - [@mraditya1999](https://www.frontendmentor.io/profile/Aditya-oss-creator)
